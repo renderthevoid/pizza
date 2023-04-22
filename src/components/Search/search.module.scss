@@ -1,0 +1,38 @@
+.input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px 20px;
+    padding-left: 42px;
+    font-size: 16px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+.icon {
+    width: 25px;
+    height: 25px;
+    opacity: 0.3;
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    transition: 0.3s all;
+
+}
+.wrapper {
+    position: relative;
+}
+.clear_icon {
+    width: 25px;
+    height: 25px;
+    opacity: .3;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+        opacity: 0.8;
+    }
+}

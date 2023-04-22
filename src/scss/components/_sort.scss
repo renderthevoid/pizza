@@ -1,0 +1,82 @@
+@import '../variables';
+
+.sort {
+  position: relative;
+  display: flex;
+  &__activity {
+    display: flex;
+    margin-left: 10px;
+  }
+  &__desc {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    width: 15px;
+    &:hover {
+      color: #fe5f1e;;
+    }
+  }
+  &__asc {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    width: 15px;
+    &:hover {
+      color: #fe5f1e;
+    }
+  }
+  .active {
+    color: #fe5f1e;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    b {
+      margin-right: 8px;
+    }
+
+    span {
+      color: $orange;
+      border-bottom: 1px dashed $orange;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $orange;
+        }
+      }
+    }
+  }
+}
